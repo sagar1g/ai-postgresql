@@ -1,5 +1,3 @@
-# ai-postgresql
-
 # AI PostgreSQL DBA Monitoring System
 
 AI PostgreSQL DBA is a Python-based monitoring tool designed to help PostgreSQL DBAs automatically analyze database performance and detect issues such as slow queries.
