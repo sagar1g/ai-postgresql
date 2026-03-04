@@ -93,6 +93,7 @@ python3 ai_postgres_monitor.py
 
 The script will analyze the database and generate reports inside the reports/ directory.
 
+```
 Example Output
 
 The tool can detect:
@@ -104,5 +105,7 @@ Long running queries
 Database health indicators
 
 Performance metrics
+
+```
 
 Reports will be saved in the reports/ folder.
