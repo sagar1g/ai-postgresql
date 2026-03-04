@@ -106,4 +106,63 @@ Performance metrics
 
 ```
 
+# Run Monitoring
+
+```
+python3 ai_postgres_monitor.py
+
+```
+
+# Output:
+
+AI PostgreSQL DBA Monitoring System
+
+Report generated: reports/report_20260304_1010.txt
+
+Monitoring completed
+
+ 
+ # Example Report
+
+Example output file:
+
+```
+
+AI PostgreSQL DBA Monitoring Report
+
+Total Queries Analyzed: 20
+Slow Queries: 3
+
+Active Connections: 25
+Replication Lag: 0
+
+Slow Query Details
+
+Query:
+SELECT * FROM orders WHERE customer_id=10
+
+Mean Execution Time: 3450 ms
+
+Recommendation:
+Create index on filter columns
+
+```
+
+# Automate Monitoring
+
+Edit cron.
+
+```
+crontab -e
+
+```
+
+Add:
+
+```
+*/30 * * * * python3 /home/postgres/ai_postgresql_dba/ai_postgres_monitor.py
+
+```
+Now monitoring runs every 30 minutes.
+
 Reports will be saved in the reports/ folder.
