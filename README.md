@@ -35,3 +35,74 @@ Create reports directory:
 ```bash
 mkdir reports
 ```
+
+
+# Prerequisites
+
+Before running this project make sure you have:
+
+```
+Python 3.8+
+
+PostgreSQL database
+
+Required Python libraries
+
+```
+
+# Installation
+
+Clone the repository:
+
+```
+git clone https://github.com/yourusername/ai-postgresql.git
+cd ai-postgresql
+
+````
+
+# Install required dependencies:
+
+```
+pip install -r requirements.txt
+
+```
+
+# Configuration
+
+Edit the config.py file and update your PostgreSQL connection details.
+
+```
+Example:
+
+DB_HOST = "localhost"
+DB_PORT = "5432"
+DB_NAME = "postgres"
+DB_USER = "postgres"
+DB_PASSWORD = "password"
+
+```
+
+# Usage
+
+Run the monitoring script:
+
+```
+python3 ai_postgres_monitor.py
+
+```
+
+The script will analyze the database and generate reports inside the reports/ directory.
+
+Example Output
+
+The tool can detect:
+
+Slow queries
+
+Long running queries
+
+Database health indicators
+
+Performance metrics
+
+Reports will be saved in the reports/ folder.
